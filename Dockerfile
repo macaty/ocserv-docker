@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:18.04
 MAINTAINER Wyatt Pan <wppurking@gmail.com>
 
 ADD ./certs /opt/certs
@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     libev-dev libwrap0-dev libpam0g-dev libseccomp-dev libreadline-dev \
     libnl-route-3-dev libkrb5-dev liboath-dev libtalloc-dev \
     libhttp-parser-dev libpcl1-dev libopts25-dev autogen pkg-config nettle-dev \
-    gnutls-bin gperf liblockfile-bin nuttcp lcov iptables unzip dnsmasq \
+    gnutls-bin gperf liblockfile-bin nuttcp lcov iptables unzip dnsmasq ruby-ronn libprotobuf-c*\
     && rm -rf /var/lib/apt/lists/*
 
 # configuration dnsmasq

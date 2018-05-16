@@ -1,6 +1,6 @@
-cn = "user"
-unit = "user"
-uid = "user"
+cn = "Baidu"
+unit = "Baidu"
+uid = "Baidu"
 expiration_days = 3650
 signing_key
 tls_www_client
